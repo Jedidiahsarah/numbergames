@@ -82,7 +82,6 @@ function textToSpeech(first, second) {
   // new SpeechSynthesisUtterance object
   var utter = new SpeechSynthesisUtterance();
   utter.rate = 1;
-  utter.pitch = 0.2;
   utter.text = first + window.localStorage.getItem("name", name) + second;
   utter.voice = english_voice[1];
 
